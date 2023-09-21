@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    background-color: antiquewhite;
+    position: fixed;
+
+}
+.nameofthe-site{
+    flex:1;
+}
+.logo-section{
+    flex: 1;
+}
