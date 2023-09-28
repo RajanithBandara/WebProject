@@ -1,35 +1,169 @@
-body{
-    height:100%;
-    width:100%;
-}
-.header{
-    display: flex;
-    background-color: antiquewhite;
-    position: fixed;
+.head-class{
     width: 100%;
-    height: 15%;
-    justify-content:center;
-    text-align:center;
-    align-content:center;
-    position:absolute;
-    margin:0;
+    background-color: aqua;
+    border: 0cap;
+    border-radius: 18px;
+
+}
+.head-div{
+    display: flex;
+    height: 10vh;
+    position: relative;
+}
+.name-div{
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    min-height: 10vh;
+}
+.logo-div{
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    min-height: 10vh;
+}
+.name,.logo{
+    text-align: center;
+}
+.images{
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-width: 100%;
+}
+.image-slide{
+    display: none;
+}
+.image-slide:first-child{
+    display: block;
+}
+@keyframes slideanim {
+    0%{
+        opacity: 0.4;
+    }
+    25%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.4;
+    }
+}
+.image-slide{
+    animation: slideanim 3s linear infinite;
+}
+.cardsection-div{
+    display: flex;
+    position: relative;
+    width: 96%;
+    height: 40%;
+    background-color: aquamarine;
+    padding: 2%;
     border: 0;
     border-radius: 18px;
 }
-.nameofthe-site{
-    flex:1;
-    align-content:center;
-    justify-content:center;
-    min-width:60%;
-    display: flex;
-    height:15%;
-    margin:0;
-}
-.logo-section{
+.card1{
     flex: 1;
-    align-content:center;
-    justify-content:center;
-    height:15%;
-    min-width:39%;
+    position: relative;
+    width: 33%;
+    height: 40%;
+    background-color: blue;
+    padding: 2%;
+    border: 0;
+    border-radius: 18px;
+}
+.card2{
+    flex: 1;
+    position: relative;
+    width: 33%;
+    height: 40%;
+    background-color: green;
+    padding: 2%;
+    border: 0;
+    border-radius: 18px;
+}
+.card3{
+    flex: 1;
+    position: relative;
+    width: 33%;
+    height: 40%;
+    background-color: blueviolet;
+    padding:2%;
+    border: 0;
+    border-radius: 18px;
+}
+.aboutus-div{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background-color: chocolate;
+    border: 0;
+    border-radius: 18px;
+}
+.aboutus-image-section{
+    width: 100%;
+    height: 30%;
     display: flex;
+
+}
+.aboutus-image{
+    flex: 1;
+    width: 50%;
+    height: 30%;
+    background-color: brown;
+    padding: 2%;
+    border: 0;
+    border-radius: 18px;
+}
+.aboutus-details{
+    flex: 1;
+    width: 50%;
+    height: 30%;
+    background-color: purple;
+    padding: 2%;
+    border-radius: 18px;
+    border: 0;
+}
+.footersection{
+    background-color: blue;
+    border: 0;
+    border-radius: 18px;
+}
+.footer-div{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    border: 0;
+    border-radius: 18px;
+    padding: 2%;
+}
+.contactinfo-div{
+    flex: 1;
+    width: 50%;
+    height: 30%;
+    background-color: brown;
+}
+.emptydiv{
+    flex:1;
+    width: 50%;
+    background-color: bisque;
+    height: 30%;
+}
+.headercolumnsection{
+    display: flex;
+    width:96%;
+    height: 30%;
+    background-color: aquamarine;
+    border: 0;
+    border-radius: 18px;
+    padding: 2%;
+}
+.headercolumn{
+    flex:1;
 }
