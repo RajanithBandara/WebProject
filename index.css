@@ -1,0 +1,169 @@
+.teacherpage-image{
+    display: flex;
+    position: relative;
+    min-height: 50%;
+}
+.imagesection-teacher{
+    position: relative;
+    flex: 1;
+    min-height: 50%;
+    width: 50%;
+    padding: 2%;
+}
+.image-01{
+    width: 96%;
+    height: 96%;
+    position: relative;
+    border-radius: 18px;
+    box-shadow: 0px 3px 3px 3px #00000045;
+}
+.content-section{
+    flex: 1;
+    width: 50%;
+    position: relative;
+    min-height: 50px;
+    padding: 2%;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+.counting-details-div{
+    display: flex;
+    width: 99%;
+}
+.card1,.card2,.card3{
+    flex: 1;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 33%;
+    height: 40px;
+    padding: 2%;
+    position: relative;
+
+}
+.card1-details,.card2-details,.card3-details{
+    background-image: linear-gradient(white,rgba(215, 242, 244, 0.705));
+    backdrop-filter:blur(15px);
+    box-shadow:0px 2px 2px 2px #00000026;
+    border: 0;
+    border-radius: 18px;
+    padding: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+}
+.quote-picture-content{
+    display: flex;
+    width: 99%;
+    height: 250px;
+    padding: 8px;
+}
+.quotation-area,.edu-image-area{
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    height: 500px;
+    position: relative;
+}
+.quotation-area{
+    flex: 35%;
+
+}
+.edu-image-area{
+    flex: 65%;
+}
+.quotation{
+    top: 100px;
+    left: 15px;
+    padding: 2%;
+    background-color: #28242a00;
+    box-shadow:0px 3px 3px 3px #00000045;
+    border: 0;
+    border-radius: 18px;
+    height:200px;
+    display: block;
+    justify-content:center ;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    width:100%;
+    backdrop-filter: blur(25px);
+}
+.quote{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    font-size: x-large;
+    font-weight: bold;
+    width:94%;
+    display:block;
+    text-align: center;
+    height:200px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#auther1,#auther2,#auther3{
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+@media screen and (max-width: 1024px) {
+    .imagesection-teacher {
+        width: 70%; 
+    }
+
+    .content-section {
+        width: 70%;
+    }
+
+    .quotation {
+        height: auto; 
+
+    .quote {
+        font-size: large; 
+    }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .teacherpage-image {
+        flex-direction: column; 
+    }
+
+    .imagesection-teacher, .content-section {
+        width: 100%; 
+    }
+
+    .quote-picture-content {
+        flex-direction: column;
+    }
+
+    .quote {
+        font-size: medium;
+        padding: 5%; 
+    }
+
+    .quotation {
+        padding: 5%; 
+    }
+
+    .quotation-area {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    .image-01 {
+        width: 100%;
+    }
+
+    .quote {
+        font-size: small; 
+    }
+
+    .quotation {
+        font-size: small; 
+    }
+}
