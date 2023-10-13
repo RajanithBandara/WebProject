@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sample</title>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="index.js"></script>
     </head>
 <body>
+
     <header class="head-class">
         <div class="head-div">
             <div class="name-div">
@@ -20,61 +23,100 @@
     <br>
     <div class="headercolumnsection">
         <div class="headercolumn">
-            Home
+            <span>Home</span>
         </div>
         <div class="headercolumn">
-            Teacher     
+            <span>Teacher</span>     
         </div>
         <div class="headercolumn">
-            Institution
+            <span>Institution</span>
         </div>
         <div class="headercolumn">
-            MyProfile
+            <span>My Profile</span>
         </div>
         <div class="headercolumn">
-            Login
+            <span>Login</span>
         </div>
     </div>
     <br>
-    <div class="slideimage-div">
-        <div class="images">
-            <!--
-                This is the place where all the first section images shluld appear
-                it is not under preview will be on next preview
-
-            -->
+    <div class="teacherpage-image">
+        <div class="imagesection-teacher">
+            <img src="scott-graham-5fNmWej4tAA-unsplash.jpg" class="image-01" alt="image1">
         </div>
-    </div><br>
-    <div class="cardsection-div">
+        <div class="content-section">
+            This the teacher content area
+        </div>
+    </div>
+    <div class="counting-details-div">
         <div class="card1">
-            Card 1 is here
+            <div class="card1-details" id="card1-details">
+              0
+            </div>
+            
         </div>
         <div class="card2">
-            Card 2 is here
+            <div class="card2-details" id="card2-details">
+               0
+            <br>Institutions 
+            </div>    
         </div>
         <div class="card3">
-            Card 3 is here
-        </div>
-    </div><br>
-    <div class="aboutus-div">
-        <div class="aboutus-image-section">
-            <div class="aboutus-image">
-                Image will appear here
+            <div class="card3-details" id="card3-details">
+               0
+            <br>Students 
             </div>
-            <div class="aboutus-details">
-                our details will appears on here
+            
+        </div>
+    </div><br><br><br><br><br><br><br><br>
+    <div class="quote-picture-content">
+        <div class="quotation-area">
+            <div class="quotation">
+                <div class="quote">
+                    <span >"A good Teacher is like a candle-it consumes itself to light the way for others."</span><br>
+                    <span id="auther1">- Mustafa Kemal Atatork</span>
+                </div>
+                <div class="quote">
+                    <Span >"Teaching is more than imparting knowledge. It is inspiring change. Learning is more than absorbing facts. It is 
+                    acquiring understanding"</Span><br>
+                    <span id="auther2">- William Arthur Ward</span>
+                </div>
+                <div class="quote">
+                    <span>"Intelligence plus character, that is the goal of education"</span><br>
+                    <span id="auther3" >- Martin Luther King</span>
+                </div> 
+            </div>
+            <script>
+                const quotations = document.querySelectorAll('.quote');
+                let currentQuotation = 0;
+
+                function displayQuote(){
+                    quotations.forEach((quote, index) => {
+                        if (index === currentQuotation){
+                            quote.style.opacity = 1;
+                        } else {
+                            quote.style.opacity = 0;
+                        }
+                    });
+                    currentQuotation = (currentQuotation + 1) % quotations.length;
+                }
+                displayQuote();
+                setInterval(displayQuote, 3000);
+            </script>
+        </div>
+        <div class="edu-image-area">
+            <div class="image-container">
+                <img src="child1.png" alt="image" width="auto" height="100%">
             </div>
         </div>
-    </div><br>
+    </div><br><br>
     <footer class="footersection">
         <div class="footer-div">
             <div class="contactinfo-div">
                 Contact Us
             </div>
-            <div class="emptydiv">
-
-            </div>
         </div>
     </footer>
+</div>
+    
 </body>
 </html>
