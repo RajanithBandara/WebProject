@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded",function(){
     var count = 0;
-    var speed = 2;
+    var speed = 10;
 
     timer(); 
     
     function timer() {
         count++;
-        if (count > 1000) {
+        if (count > 500) {
             return;
         }
         document.getElementById("card1-details").innerHTML = "<b>" +count +"+</b><br>Teachers";
