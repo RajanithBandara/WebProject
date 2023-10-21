@@ -1,169 +1,102 @@
-.head-class{
-    width: 100%;
-    background-color: aqua;
-    border: 0cap;
-    border-radius: 18px;
-
+body{
+    background-color:white;
 }
+.header-of-website{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    width: 96%;
+    top: 28px;
+}
+.column{
+    flex: 1;
+    text-align: center;
+}
+.logo-div{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    min-width: 25%;
+    min-height: 20px;
+    display: flex;
+}
+#homebtn,#teacherbtn,#institutionbtn,#about-usbtn{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border-radius: 8px;
+    margin: 0;
+}
+#homebtn:hover,#teacherbtn:hover,#institutionbtn:hover,#about-usbtn:hover{
+    background-color: rgba(240, 248, 255, 0.397);
+}
+#homedet,#teacherdet,#institutedet,#aboutusdet{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.name-div{
+    height: 40px;
+    bottom: 8px;
+}
+.name{
+    text-align: center;
+    text-decoration: solid;
+    font-size: medium;
+    font-weight: bold;
+    color: antiquewhite;
+    bottom:105px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.maindiv{
+    background-image:linear-gradient(#6b6bc7,#aa9c9c);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width:96%;
+    border: 0;
+    border-radius: 18px;
+    padding: 2%;
+}
+
 .head-div{
     display: flex;
-    height: 10vh;
+    height: 400px;
     position: relative;
 }
 .name-div{
     flex: 1;
     position: relative;
     justify-content: center;
-    align-content: center;
-    min-height: 10vh;
+    align-content: center;  
 }
-.logo-div{
-    flex: 1;
-    position: relative;
-    justify-content: center;
-    align-content: center;
-    min-height: 10vh;
-}
-.name,.logo{
-    text-align: center;
-}
-.images{
-    position: relative;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    min-width: 100%;
-}
-.image-slide{
-    display: none;
-}
-.image-slide:first-child{
-    display: block;
-}
-@keyframes slideanim {
-    0%{
-        opacity: 0.4;
-    }
-    25%{
-        opacity: 1;
-    }
-    80%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0.4;
-    }
-}
-.image-slide{
-    animation: slideanim 3s linear infinite;
-}
-.cardsection-div{
-    display: flex;
-    position: relative;
-    width: 96%;
-    height: 40%;
-    background-color: aquamarine;
-    padding: 2%;
-    border: 0;
-    border-radius: 18px;
-}
-.card1{
-    flex: 1;
-    position: relative;
-    width: 33%;
-    height: 40%;
-    background-color: blue;
-    padding: 2%;
-    border: 0;
-    border-radius: 18px;
-}
-.card2{
-    flex: 1;
-    position: relative;
-    width: 33%;
-    height: 40%;
-    background-color: green;
-    padding: 2%;
-    border: 0;
-    border-radius: 18px;
-}
-.card3{
-    flex: 1;
-    position: relative;
-    width: 33%;
-    height: 40%;
-    background-color: blueviolet;
-    padding:2%;
-    border: 0;
-    border-radius: 18px;
-}
-.aboutus-div{
-    position: relative;
-    width: 100%;
-    height: 30%;
-    background-color: chocolate;
-    border: 0;
-    border-radius: 18px;
-}
-.aboutus-image-section{
-    width: 100%;
-    height: 30%;
-    display: flex;
 
-}
-.aboutus-image{
-    flex: 1;
-    width: 50%;
-    height: 30%;
-    background-color: brown;
-    padding: 2%;
-    border: 0;
-    border-radius: 18px;
-}
-.aboutus-details{
-    flex: 1;
-    width: 50%;
-    height: 30%;
-    background-color: purple;
-    padding: 2%;
-    border-radius: 18px;
-    border: 0;
-}
 .footersection{
-    background-color: blue;
+    background-color: #0d15865c;
+    box-shadow:0 3px 3px 3px #0000004f;
     border: 0;
     border-radius: 18px;
+    height:80px;
+    align-content:center;
+    justify-content:center;
+    text-align:center;  
+    position: relative;
 }
 .footer-div{
     display: flex;
-    width: 100%;
-    height: 30%;
+    width: 96%;
+    height: 30px;
     border: 0;
     border-radius: 18px;
     padding: 2%;
+    position: relative;
 }
 .contactinfo-div{
     flex: 1;
     width: 50%;
-    height: 30%;
-    background-color: brown;
-}
-.emptydiv{
-    flex:1;
-    width: 50%;
-    background-color: bisque;
-    height: 30%;
-}
-.headercolumnsection{
-    display: flex;
-    width:96%;
-    height: 30%;
-    background-color: aquamarine;
-    border: 0;
-    border-radius: 18px;
-    padding: 2%;
-}
-.headercolumn{
-    flex:1;
+    background-color: #b5303000;
+    border:0;
+    border-radius:18px;
+    backdrop-filter:blur(15px);
 }

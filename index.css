@@ -1,0 +1,180 @@
+.welcome-area{
+    height: 500px;
+    width: 100%;
+    background-image : linear-gradient(rgb(65, 116, 174),white);
+    backdrop-filter: blur(18px);
+    opacity: 0.8;
+    margin: 0;
+    border: 0;
+    border-radius: 18px;
+    display: flex;
+    z-index: 2;
+}
+.welcomemessage-section{
+    flex: 55%;
+    border: 0;
+    margin: 0;
+    height: 500px;
+    padding: 2%;
+    min-width: max-content;
+    min-height: 500px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.welcome-image-section{
+    flex: 45%;
+    border: 0;
+    margin: 0;
+    height: 500px;
+}
+.login-buttons{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-width: 100%;
+    text-align: center;
+}
+.login-button{
+    font-size: x-large;
+    padding: 2%;
+    border: 0;
+    border-radius: 12px;
+    background-color: rgba(154, 127, 196, 0.836);
+    margin: 0;
+    width: 200%;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.285);
+    position: relative;
+    transition: background-color 1s ease-in-out;
+    transition: box-shadow 1s ease-in-out;
+}
+.login-button:hover{
+    background-color: purple;
+    box-shadow: none;
+}
+.register-button{
+    font-size: large;
+    padding: 2%;
+    border:0;
+    margin: 0;
+    border-radius: 12px;
+    background-color: lightblue;
+    width: 200%;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color 2s ease-in-out;
+    transition: color 1s ease-in-out;
+}
+
+.register-button:hover{
+    background-color: rgb(48, 9, 48);
+    color:white
+}
+.counting-details-div{
+    display: flex;
+    width: 99%;
+}
+.card1,.card2,.card3{
+    flex: 1;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 33%;
+    height: 40px;
+    padding: 2%;
+    position: relative;
+
+}
+.card1-details,.card2-details,.card3-details{
+    background-color: rgba(197, 197, 197, 0.527);
+    backdrop-filter:blur(15px);
+    box-shadow:0px 2px 2px 2px #00000026;
+    border: 0;
+    border-radius: 18px;
+    padding: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    animation-name: cardoutanim;
+    animation-duration: 2s;
+    transition: box-shadow 2s ease-in-out;
+}
+.card1-details:hover,.card2-details:hover,.card3-details:hover{
+    background-color: rgb(72, 76, 79);
+    animation-name: cardanim;
+    animation-duration: 2s;
+    color: white;
+    box-shadow: none;
+}
+@keyframes cardanim {
+    from{
+        background-color: rgba(197, 197, 197, 0.527);
+    }
+    to{
+        background-color: rgb(72, 76, 79);
+        color: white;
+    }
+}
+@keyframes cardoutanim {
+    from{
+        background-color: rgb(72, 76, 79);
+        color: white;
+    }
+    to{
+        background-color: rgba(197, 197, 197, 0.527);
+    }
+}
+.quotation-and-picture-content{
+    display: flex;
+    position: relative;
+    width: 99%;
+    height: 500px;
+}
+.quote-area{
+    flex: 40%;
+    padding: 2%;
+    height: 500px;
+}
+.picture-area2{
+    flex: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.quotation-section{
+    text-align: center;
+    border: 0;
+    border-radius: 18px;
+    justify-content: center;
+    align-content: center;
+    min-width:100%;
+    min-height: 230px;
+    top: 100px;
+    padding: 2%;
+    position: relative;
+    box-shadow:0px 3px 3px 3px #00000045;
+    backdrop-filter: blur(25px);
+    background-image: linear-gradient(white,rgba(167, 168, 171, 0.74));
+}
+.quote{
+    font-size: x-large;
+    font-weight: bold;
+    position: absolute;
+    top: 65px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+#auther1,#auther2,#auther3{
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+.message{
+    font-size: xxx-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
