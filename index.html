@@ -9,14 +9,24 @@
         <link rel="stylesheet" href="smalldisplay.css">
         <script src="hover.js"></script>
     </head>
-<body>
-    <div class="header-of-website">
+<body style="transition: all 0.5s ease-in;">
+    <script>
+        document.body.style.opacity = 0;
+        function displaybody(){
+            document.body.style.opacity = 1;
+        }
+        setInterval(displaybody,300);
+    </script>
+    <header class="header-of-website" id="logo-col">
         <div class="column">
-            <div class="logo-div">
-                <img src="logo-logo.png" width="100%" height="180px">
+            <center>
+                            <div class="logo-section">
+
             </div>
+            </center>
+
         </div>
-        <div class="column">
+        <div class="column" >
             <div id="home-button">
                 <a href="index.html">
                     <button id="homebtn">
@@ -73,15 +83,35 @@
                 About us
             </div>
         </div>
-    </div>
+    </header>
     <div class="welcome-area">
-        <div class="welcomemessage-section">
-            <div class="message-container">
-                <div class="message">
-                    <span>Welcome to our platform!!</span><br>
-                    <span>We are here to help to find your Teacher</span>
-                </div>
-            </div><br>
+        <div class="welcome-message-div">
+            <div id="message-01">
+                <span>
+                    Hello!!,<br>
+                    We are here to help you to find your Teacher.
+                </span>   
+            </div> 
+            <div id="message-02">
+                <span>
+                    Let's Find Your Teacher!!!
+                </span>
+            </div>
+            <div id="image-div-of-firstdiv">
+                <img src="learnimage02.png" alt="image" width="auto" height="auto">
+            </div>
+            <script>
+                var first_content = document.getElementById('message-01');
+                var second_content = document.getElementById('message-02');
+                var image_content = document.getElementById('image-div-of-firstdiv');
+                setTimeout(function(){
+                    first_content.style.opacity = 0;
+                    second_content.style.opacity = 1;
+                    second_content.style.transform = 'translateX(-50%)';
+                    image_content.style.opacity = 1;
+                    image_content.style.transform = 'translateX(50%)';
+                }, 4000);
+            </script>
         </div>
     </div>
     <div class="login-buttons">
