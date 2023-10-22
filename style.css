@@ -1,26 +1,45 @@
 body{
-    background-color:white;
+    background-color:rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 .header-of-website{
     display: flex;
-    z-index: 1;
-    position: absolute;
-    width: 96%;
-    top: 28px;
+    position: relative;
+    width:100%;
+    min-width: 100%;
+    background-color:#0f53ac4c;
+    margin-bottom:10px;
+    border:0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    min-height: 50px;
+    height: 80px;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.237);
 }
 .column{
     flex: 1;
     text-align: center;
+    top: 10px;
 }
-.logo-div{
-    position: absolute;
+#logo-col{
     justify-content: center;
-    align-items: center;
     align-content: center;
+    align-items: center;
     text-align: center;
-    min-width: 25%;
-    min-height: 20px;
     display: flex;
+}
+.logo-section{
+    background-image: url(logo-logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50%;
+    position: relative;
 }
 #homebtn,#teacherbtn,#institutionbtn,#about-usbtn{
     background-color: rgba(255, 255, 255, 0);
