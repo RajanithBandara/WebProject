@@ -92,10 +92,9 @@ body{
 }
 
 .footersection{
-    background-color: #0d15865c;
-    box-shadow:0 3px 3px 3px #0000004f;
+    background-color: #000000;
+    box-shadow:-3px 3px 3px 3px #0000004f;
     border: 0;
-    border-radius: 18px;
     height:80px;
     align-content:center;
     justify-content:center;
@@ -112,10 +111,11 @@ body{
     position: relative;
 }
 .contactinfo-div{
-    flex: 1;
-    width: 50%;
-    background-color: #b5303000;
-    border:0;
-    border-radius:18px;
-    backdrop-filter:blur(15px);
+    flex: 50%;
+    color: white;
+
+}
+.logo-footer-div{
+    flex: 50%;
+    color: white;
 }

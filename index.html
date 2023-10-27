@@ -8,6 +8,7 @@
         <script src="index.js"></script>
         <link rel="stylesheet" href="smalldisplay.css">
         <script src="hover.js"></script>
+        <link rel="stylesheet" href="index-smalldisp.css">
     </head>
 <body style="transition: all 0.5s ease-in;">
     <script>
@@ -107,9 +108,9 @@
                 setTimeout(function(){
                     first_content.style.opacity = 0;
                     second_content.style.opacity = 1;
-                    second_content.style.transform = 'translateX(-50%)';
+                    second_content.style.transform = 'translateX(2%)';
                     image_content.style.opacity = 1;
-                    image_content.style.transform = 'translateX(50%)';
+                    image_content.style.transform = 'translateX(0%)';
                 }, 4000);
             </script>
         </div>
@@ -122,32 +123,55 @@
                 </button>
             </div><br>
             <div class="button-02">
-                <button class="register-button">
+                <button class="register-button" id="registerbtn">
                     Register
                 </button>
+                <script>
+                    var docbtn = document.getElementById("registerbtn");
+                    setTimeout(function(){
+                        docbtn.style.opacity = 1;
+                    }, 1000);
+                </script>
             </div>
         </div>
     </div>
+    <script>
+        
+    </script>
     <div class="counting-details-div">
-        <div class="card1">
+        <div class="card1" id="card1">
             <div class="card1-details" id="card1-details">
               0
             </div>
             
         </div>
-        <div class="card2">
+        <div class="card2" id="card2">
             <div class="card2-details" id="card2-details">
                0
             <br>Institutions 
             </div>    
         </div>
-        <div class="card3">
+        <div class="card3" id="card3">
             <div class="card3-details" id="card3-details">
                0
             <br>Students 
             </div>
             
         </div>
+        <script>
+            var card1 = document.getElementById('card1');
+            var card2 = document.getElementById('card2');
+            var card3 = document.getElementById('card3');
+
+            setTimeout(function(){
+                card1.style.transform = 'translateY(0%)';
+                card2.style.transform = 'translateY(0%)';
+                card3.style.transform = 'translateY(0%)';
+                card1.style.opacity = 1;
+                card2.style.opacity = 1;
+                card3.style.opacity = 1;
+            },1000)
+        </script>
     </div>
     <div class="quotation-and-picture-content">
         <div class="quote-area">
@@ -195,6 +219,9 @@
         </div>
     <footer class="footersection">
         <div class="footer-div">
+            <div class="logo-footer-div">
+                FindYourTeacher
+            </div>
             <div class="contactinfo-div">
                 Contact Us
             </div>
