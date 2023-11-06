@@ -37,40 +37,48 @@
         <br>
         <center>
             <div class="table-class">
-                <form action="#" name="" class="">
-                <table border="0">
+                <form action="#" name="institutionform" class="institutionform">
+                <div class="main">
                     <h1>Institute Registration Form</h1>
-                    <tr>
-                        <td>Name with initials:</td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td>E-mail:</td>
-                        <td><input type="email"></td>
-                    </tr>
-                    <tr>
-                        <td>Contact No.:</td>
-                        <td><input type="number"></td>
-                    </tr>
-                    <tr>
-                        <td>Username:</td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td>Password:</td>
-                        <td><input type="password"></td>
-                    </tr>
-                    <tr>
-                        <td>Password Retype:</td>
-                        <td><input type="password"></td>
-                    </tr>
-                    <tr>
-                        <td>Institute website:</td>
-                        <td><input type="url"></td>
-                    </tr>
-                    <tr>
-                        <td>District:</td>
-                        <td>
+
+                    <div class="part1">
+                        <div class="part1-1">Name with initials:</div>
+                        <div class="part1-1"><input type="text"></div>
+                    </div>
+                    
+                    <div class="part1">
+                        <div class="part1-1">E-mail:</div>
+                        <div class="part1-1"><input type="email"></div>
+                    </div>
+
+                    <div class="part1">
+                        <div class="part1-1">Contact No.:</div>
+                        <div class="part1-1"><input type="number"></div>
+                    </div>
+
+                    <div class="part1">
+                        <div class="part1-1">Username:</div>
+                        <div class="part1-1"><input type="text"></div>
+                    </div>
+
+                    <div class="part1">
+                        <div class="part1-1">Password:</div>
+                        <div class="part1-1"><input type="password"></div>
+                    </div>
+
+                    <div class="part1">
+                        <div class="part1-1">Password Retype:</div>
+                        <div class="part1-1"><input type="password"></div>
+                    </div>
+
+                    <div class="part1">
+                        <div class="part1-1">Institute website:</div>
+                        <div class="part1-1"><input type="url"></div>
+                    </div>
+
+                    <div class="part1">
+                        <div class="part1-1">District:</div>
+                        <div class="part1-1">
                             <select name="District">
                                 <option value=0>Select your District</option>
                                 <option value="Colombo">Colombo</option>
@@ -100,14 +108,15 @@
                                 <option value="Kegalle">Kegalle</option>
                             
                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">Subjects:</td>
-                        <td>
+                        </div>
+                    </div>
+
+                    <div class="part1">
+                        <div class="part1-1">Subjects:</div>
+                        <div class="part1-1">
                             <dl>
                                 <dt><input type="checkbox" value="Primary-Grades" id="pgrade"><b>Primary Grades</b></dt>
-                                <dv class="PrimaryGrades" id="primarygrades">
+                                <div class="PrimaryGrades" id="primarygrades">
                                 <dd><input type="checkbox" value="Sinhala Language">Sinhala Language</dd>
                                 <dd><input type="checkbox" value="English Language">English</dd>
                                 <dd><input type="checkbox" value="Tamil Language">Tamil Language</dd>
@@ -120,7 +129,8 @@
                                 <dd><input type="checkbox" value="Buddhism">Buddhism</dd>
                                 <dd><input type="checkbox" value="Saivanvri">Saivanvri</dd>
                                 <dd><input type="checkbox" value="Islam">Islam</dd><br>
-                                </dv>
+                                </div>
+
                                 <script>
                                     var xvalue = 0;
                                     if (xvalue===0){
@@ -209,6 +219,7 @@
                                     <dd><input type="checkbox" value="Physics">Physics</dd>
                                     <dd><input type="checkbox" value="ICT">ICT</dd><br>
                                 </div>
+                                </div>
                                 
         
                                 <dd><input type="checkbox" value="Commerce"><b>Commerce Stream</b></dd><br>
@@ -241,24 +252,27 @@
                                 <dd><input type="checkbox" value="German">German</dd>
                                 <dd><input type="checkbox" value="Japanese">Japanese</dd>
                                 </div>
-                                </div>
+                                </div>                                                           
         
-                                <tr>
-                                    <td valign="top">Medium:</td>
-                                    <td>
+                                <div class="part1">
+                                    <div class="part1-1">Medium:</div>
+                                    <div class="part1-1">
                                         <dl>
-                                            <dt><input type="checkbox" name="Sinhala" value="Sinhala">Sinhala</dt>
-                                            <dt><input type="checkbox" name="Sinhala" value="English">English</dt>
-                                            <dt><input type="checkbox" name="Sinhala" value="Tamil">Tamil</dt>
+                                            <dt><input type="checkbox" name="Sinhala" value="Sin">Sinhala</dt>
+                                            <dt><input type="checkbox" name="Sinhala" value="Eng">English</dt>
+                                            <dt><input type="checkbox" name="Sinhala" value="Tam">Tamil</dt>
                                         </dl>
-                                    </td>
-                                </tr>    
+                                    </div>
+                                </div>
+                            </div>
+                                </div>    
                         
           
-                        </td>
-                    </tr>
+                            </div>
+                        </div>
         
-                </table>
+                    </div>
+                    
                     <input type="submit" name="sub" value="submit"> 
                     <input type="reset" name="clr" value="clear">
                 </form>
@@ -270,7 +284,6 @@
                     Contact Us
                 </div>
                 <div class="emptydiv">
-        
                 </div>
             </div>
         </footer>
