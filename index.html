@@ -34,7 +34,7 @@
             <div id="home-button">
                 <a href="index.html">
                     <button id="homebtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="hme" width="34" height="34" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
                     <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
                   </svg>
                 </button>    
@@ -48,7 +48,7 @@
             <div id="teacher-button">
                 <a href="#">
                     <button id="teacherbtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="thr" width="34" height="34" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
                   </svg>
                 </button>
@@ -62,7 +62,7 @@
             <div id="institutions-button">
                 <a href="#">
                     <button id="institutionbtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" id="inst"  width="34" height="34" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                     <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                   </svg>                    
                 </button>
@@ -77,7 +77,7 @@
             <div id="aboutus-button">
                 <a href="#">
                     <button id="about-usbtn">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+                   <svg xmlns="http://www.w3.org/2000/svg" id="abt-us" width="34" height="34" fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
                     <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z"/>
                   </svg> 
                 </button>
@@ -111,9 +111,9 @@
                 setTimeout(function(){
                     first_content.style.opacity = 0;
                     second_content.style.opacity = 1;
-                    second_content.style.transform = 'translateX(2%)';
+                    second_content.style.transform = 'translateY(0%)';
                     image_content.style.opacity = 1;
-                    image_content.style.transform = 'translateX(0%)';
+                    image_content.style.transform = 'translateY(0%)';
                 }, 4000);
             </script>
         </div>
@@ -176,50 +176,191 @@
             },1000)
         </script>
     </div>
-    <div class="quotation-and-picture-content">
-        <div class="quote-area">
-            <div class="quotation-section">
-                <div class="quote">
-                    <span >"A good Teacher is like a candle-it consumes itself to light the way for others."</span><br>
-                    <span id="auther1">- Mustafa Kemal Atatork</span>
+
+
+        </div>
+    </div>
+    <div class="teachers-ads" id="teacher-ads">
+        <div class="teachers-ad-sect" id="teacher-ad-sect">
+            <div class="row-of-teacher-ad-1">
+                <div class="teacher1" id="teacher1">
+                    <div class="teacher1img">
+                        <img src="teacherimages/teacherimg.png" height="100" width="100" alt="image">
+                    </div>
+                    <div class="techer1-details">
+                        <div class="teacher1-name">
+                            <span>Teacher Name</span>
+                        </div>
+                        <div class="teacher1-specs">
+                            <span>Teacher Specs</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="quote">
-                    <Span >"Teaching is more than imparting knowledge. It is inspiring change. Learning is more than absorbing facts. It is 
-                    acquiring understanding"</Span><br>
-                    <span id="auther2">- William Arthur Ward</span>
+                <div class="teacher2" id="teacher2">
+                    <div class="teacher2img">
+                        <img src="teacherimages/teacherimg.png" height="100" width="100" alt="image">
+                    </div>
+                    <div class="techer2-details">
+                        <div class="teacher2-name">
+                            <span>Teacher Name</span>
+                        </div>
+                        <div class="teacher2-specs">
+                            <span>Teacher Specs</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="quote">
-                    <span>"Intelligence plus character, that is the goal of education"</span><br>
-                    <span id="auther3" >- Martin Luther King</span>
+                <div class="teacher3" id="teacher3">
+                    <div class="teacher3img">
+                        <img src="teacherimages/teacherimg.png" height="100" width="100" alt="image">
+                    </div>
+                    <div class="techer3-details">
+                        <div class="teacher3-name">
+                            <span>Teacher Name</span>
+                        </div>
+                        <div class="teacher3-specs">
+                            <span>Teacher Specs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher4" id="teacher4">
+                    <div class="teacher4img">
+                        <img src="teacherimages/teacherimg.png" height="100" width="100" alt="image">
+                    </div>
+                    <div class="techer4-details">
+                        <div class="teacher4-name">
+                            <span>Teacher Name</span>
+                        </div>
+                        <div class="teacher4-specs">
+                            <span>Teacher Specs</span>
+                        </div>
+                    </div>           
                 </div>
             </div>
-        </div>
-        <div class="picture-area2">
-            <div class="image-container2">
-                <div class="image">
-                    <img src="image1.png" alt="image">
+            <div class="row-of-teacher-ad-2">
+                <div class="teacher1" id="teacher1">
+                    <div class="teacher1img">
+                        <img src="teacherimages/teacherimg.png" height="100" width="100" alt="image">
+                    </div>
+                    <div class="techer1-details">
+                        <div class="teacher1-name">
+                            <span>Teacher Name</span>
+                        </div>
+                        <div class="teacher1-specs">
+                            <span>Teacher Specs</span>
+                        </div>
+                    </div>
                 </div>
+                <div class="teacher2" id="teacher2">
+                    <div class="teacher2img">
+                        <img src="teacherimages/teacherimg.png" height="100" width="100" alt="image">
+                    </div>
+                    <div class="techer2-details">
+                        <div class="teacher2-name">
+                            <span>Teacher Name</span>
+                        </div>
+                        <div class="teacher2-specs">
+                            <span>Teacher Specs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher3" id="teacher3">
+                    <div class="teacher3img">
+                        <img src="teacherimages/teacherimg.png" height="100" width="100" alt="image">
+                    </div>
+                    <div class="techer3-details">
+                        <div class="teacher3-name">
+                            <span>Teacher Name</span>
+                        </div>
+                        <div class="teacher3-specs">
+                            <span>Teacher Specs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher4" id="teacher4">
+                    <div class="teacher4img">
+                        <img src="teacherimages/teacherimg.png" height="100" width="100" alt="image">
+                    </div>
+                    <div class="techer4-details">
+                        <div class="teacher4-name">
+                            <span>Teacher Name</span>
+                        </div>
+                        <div class="teacher4-specs">
+                            <span>Teacher Specs</span>
+                        </div>
+                    </div>           
+                </div>
+            </div>
             </div>
         </div>
     </div>
-            <script>
-                const quotations = document.querySelectorAll('.quote');
-                let currentQuotation = 0;
+    <script>
+        var teacher1 = document.getElementById('teacher1');
+        var teacher2 = document.getElementById('teacher2');
+        var teacher3 = document.getElementById('teacher3');
+        var teacher4 = document.getElementById('teacher4');
 
-                function displayQuote(){
-                    quotations.forEach((quote, index) => {
-                        if (index === currentQuotation){
-                            quote.style.opacity = 1;
-                        } else {
-                            quote.style.opacity = 0;
+        
+    </script>
+        <div class="quotation-and-picture-content">
+            <div class="quote-area">
+                <div class="quotation-section">
+                    <div class="quote">
+                        <span >"A good Teacher is like a candle-it consumes itself to light the way for others."</span><br>
+                        <span id="auther1">- Mustafa Kemal Atatork</span>
+                    </div>
+                    <div class="quote">
+                        <Span >"Teaching is more than imparting knowledge. It is inspiring change. Learning is more than absorbing facts. It is 
+                        acquiring understanding"</Span><br>
+                        <span id="auther2">- William Arthur Ward</span>
+                    </div>
+                    <div class="quote">
+                        <span>"Intelligence plus character, that is the goal of education"</span><br>
+                        <span id="auther3" >- Martin Luther King</span>
+                    </div>
+                    <script>
+                        const quotations = document.querySelectorAll('.quote');
+                        let currentQuotation = 0;
+        
+                        function displayQuote(){
+                            quotations.forEach((quote, index) => {
+                                if (index === currentQuotation){
+                                    quote.style.opacity = 1;
+                                } else {
+                                    quote.style.opacity = 0;
+                                }
+                            });
+                            currentQuotation = (currentQuotation + 1) % quotations.length;
                         }
-                    });
-                    currentQuotation = (currentQuotation + 1) % quotations.length;
-                }
-                displayQuote();
-                setInterval(displayQuote, 5000);
-            </script>
+                        displayQuote();
+                        setInterval(displayQuote, 5000);
+                    </script>
+                </div>
+            </div>
+            <div class="picture-area2">
+                <div class="image-container2">
+                    <div class="image">
+                        <img src="image1.png" alt="image">
+                    </div>
+                </div>
+            </div>
         </div>
+    <div class="about-us-content-ofhome">
+        <div class="about-us-image">
+            <div class="abt2-content">
+               <div class="abtus-topic">
+                Everything is a Team work
+            </div>
+            <div class="abt-us-btn">
+                <a href="about page/about page/about.html" target="_blank">
+                <button class="abt1-us-btn">
+                    About Us
+                </button>                    
+                </a>
+
+            </div> 
+            </div>
+        </div>
+    </div>
     <footer class="footersection">
         <div class="footer-div">
             <div class="logo-footer-div">
@@ -229,8 +370,7 @@
                 Contact Us
             </div>
         </div>
-    </footer>
-</div>
-    
+    </footer> 
+</div> 
 </body>
 </html>
