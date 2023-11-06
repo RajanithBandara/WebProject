@@ -34,7 +34,7 @@
     border : 0;
     border-radius: 18px;
     padding: 2%;
-    background-color: rgb(184 177 177 / 68%);
+    background-color: rgb(142 136 136 / 21%);
     backdrop-filter: blur(18px);
 }
 #message-02{
@@ -45,12 +45,12 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
     transition: transform 1s ease-in-out;
-    color: rgb(247 247 255);
+    color: white;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.235);
     border : 0;
     border-radius: 18px;
     padding: 2%;
-    background-color: rgb(184 177 177 / 68%);
+    background-color: rgb(142 136 136 / 21%);
     backdrop-filter: blur(18px);
     flex: 1;
     transform: translateX(50%);
@@ -108,6 +108,7 @@
     transition: opacity 1s ease-in-out;
     opacity: 0;
 }
+
 .register-button:hover{
     background-color: rgb(41 85 31);
     color:white
@@ -184,6 +185,11 @@
     backdrop-filter: blur(25px);
     background-image: linear-gradient(#443e3e6b,rgb(129 130 135 / 74%));
     color:white;
+    transition: all 1s ease-in-out;
+}
+.quotation-section:hover{
+    background-color: black;
+    box-shadow: none;
 }
 .quote{
     font-size: x-large;
@@ -198,4 +204,135 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
 }
-
+.teachers-ads{
+    background-color: #7b858c;
+    display: block;
+    padding: 2%;
+    position: relative;
+    width: auto;
+    border: 0;
+    margin: 0;
+}
+.row-of-teacher-ad-1,.row-of-teacher-ad-2{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 0;
+    border: 0; 
+    overflow:scroll 500px;
+}
+.teacher1,.teacher2,.teacher3,.teacher4{
+    flex: 1;
+    height: 300px;
+    background-color: #000000;
+    color:white;
+    box-shadow: 0px 1px 1px 1px black;
+    backdrop-filter: blur(18px);
+    border: 0;
+    margin: 10px;
+    border-radius: 18px;
+    padding: 2%;
+    transition: all 1s ease-in-out;
+}
+.teacher1:hover,.teacher2:hover,.teacher3:hover,.teacher4:hover{
+    background-color: #282e41;
+    box-shadow: none;
+}
+.teacher1img,.teacher2img,.teacher3img,.teacher4img{
+    width: 100%;
+    min-width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+.teacher1-details,.teacher2-details,.teacher3-details,.teacher4-details{
+    width: 100%;
+    min-width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    text-align: center;
+}
+.teacher1-name,.teacher2-name,.teacher3-name,.teacher4-name{
+    font-size: x-large;
+    width: 100%;
+    position: relative;
+    min-width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.teacher1-specs,.teacher2-specs,.teacher3-specs,.teacher4-specs{
+    font-size: large;
+    width: 100%;
+    position: relative;
+    min-width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about-us-content-ofhome{
+    width: 100%;
+    margin: 0;
+    border: 0;
+    background-image: url("PXL_20230712_071039404~2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    height: 900px;
+    overflow: hidden;
+}
+.about-us-image{
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    position: relative;
+    background-color: rgba(233, 224, 224, 0);
+    min-width: 100%;
+    min-height: 900px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+}
+.about-us-content-ofhome:hover .about-us-image{
+    backdrop-filter: blur(18px);
+}
+.abt2-content{
+    padding-top: 360px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.abtus-topic{
+    color: white;
+    position: relative;
+    font-size:500%;
+}
+.abt1-us-btn{
+    position: relative;
+    border: 0;
+    margin: 0;
+    border-radius: 18px;
+    padding: 2%;
+    background-color: white;
+    font-size: 180%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 1s ease-in-out;
+}
+.abt1-us-btn:hover{
+    background-color: #4a98d6;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.285);
+    border-radius: 8px;
+}
