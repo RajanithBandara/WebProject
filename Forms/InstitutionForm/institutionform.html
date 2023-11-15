@@ -82,7 +82,7 @@
 
                     <div class="part1">
                         <div class="part1-1">Name with initials:</div>
-                        <div class="part1-1"><input type="text"></div>
+                        <div class="part1-1" id><input type="text"></div>
                     </div>
                     
                     <div class="part1">
@@ -154,7 +154,7 @@
                         <div class="part1-1">Subjects:</div>
                         <div class="part1-1">
                             <dl>
-                                <dt><input type="checkbox" value="Primary-Grades" id="pgrade"><b>Primary Grades</b></dt>
+                                <dt><input type="checkbox" name="Primary-Grades" value="Primary-Grades" id="pgrade"><b>Primary Grades</b></dt>
                                 <div class="PrimaryGrades" id="primarygrades">
                                 <dd><input type="checkbox" value="Sinhala Language">Sinhala Language</dd>
                                 <dd><input type="checkbox" value="English Language">English</dd>
@@ -171,24 +171,25 @@
                                 </div>
 
                                 <script>
-                                    var xvalue = 0;
-                                    if (xvalue===0){
-                                        document.getElementById('pgrade').onclick = function(){
-                                        document.getElementById('primarygrades').style.display = 'block';
-                                        xvalue = 1;
+                                    var checkboxelem = document.getElementById('pgrade');
+                                    function displaysect()
+                                    {
+                                        if(checkboxelem.checked)
+                                        {
+                                            document.getElementById('primarygrades').style.display = 'block';
+                                        }
+                                        else
+                                        {
+                                            document.getElementById('primarygrades').style.display = 'none'; 
+                                        }
                                     }
-                                    }
-                                    
-                                    if (xvalue===1){
-                                        document.getElementById('pgrade').onclick = function(){
-                                        document.getElementById('primarygrades').style.display = 'none';
-                                        xvalue = 0;
-                                    }
-                                    }
+                                    displaysect();
+
+                                    checkboxelem.addEventListener('change',displaysect);
                                 </script>
                                 
-                                <dt><input type="checkbox" value="Grade-6-9"><b>Grade 6-9</b></dt>
-                                <div class="Grade6-9">
+                                <dt><input type="checkbox" name="Grade-6-9" value="Grade-6-9" id="sixtonine"><b>Grade 6-9</b></dt>
+                                <div class="Grade6-9" id="gradesixtonine">
                                 <dd><input type="checkbox" value="Sinhala Language">Sinhala Language</dd>
                                 <dd><input type="checkbox" value="Tamil Language">Tamil Language</dd>
                                 <dd><input type="checkbox" value="Catholicism">Catholicism</dd>
@@ -211,9 +212,27 @@
                                 <dd><input type="checkbox" value="Art">Art</dd>
                                 <dd><input type="checkbox" value="Drama and Theatre">Drama and Theatre</dd><br>
                                 </div>
+
+                                <script>
+                                    var checkboxelem_two = document.getElementById('sixtonine');
+                                    function displaysect()
+                                    {
+                                        if(checkboxelem_two.checked)
+                                        {
+                                            document.getElementById('gradesixtonine').style.display = 'block';
+                                        }
+                                        else
+                                        {
+                                            document.getElementById('gradesixtonine').style.display = 'none'; 
+                                        }
+                                    }
+                                    displaysect();
+
+                                    checkboxelem_two.addEventListener('change',displaysect);
+                                </script>
                             
-                                <dt><input type="checkbox" value="Ordinary-Level"><b>Ordinary Level</b></dt>
-                                <div class="ordinarylevel">
+                                <dt><input type="checkbox" name="Ordinary-Level" value="Ordinary-Level" id="ord-level"><b>Ordinary Level</b></dt>
+                                <div class="ordinarylevel" id="ordilevel">
                                     <dd><input type="checkbox" value="Catholicism">Catholicism</dd>
                                     <dd><input type="checkbox" value="Christianity">Christianity</dd>
                                     <dd><input type="checkbox" value="Buddhism">Buddhism</dd>
@@ -244,32 +263,104 @@
                                     <dd><input type="checkbox" value="Health Science">Health Science</dd>
                                     <dd><input type="checkbox" value="Media Studies">Media Studies</dd><br>
                                 </div>
+
+                                <script>
+                                    var checkboxelem_three = document.getElementById('ord-level');
+                                    function displaysect()
+                                    {
+                                        if(checkboxelem_three.checked)
+                                        {
+                                            document.getElementById('ordilevel').style.display = 'block';
+                                        }
+                                        else
+                                        {
+                                            document.getElementById('ordilevel').style.display = 'none'; 
+                                        }
+                                    }
+                                    displaysect();
+
+                                    checkboxelem_three.addEventListener('change',displaysect);
+                                </script>
         
         
+                                <dt><input type="checkbox" name="Advanced-level" value="Advanced-Level" id="ad-level"><b>Advanced Level</b></dt><br>
+                                <div class="advancedlevel" id="alevel">
+
+                                    <script>
+                                        var checkboxelem_four = document.getElementById('ad-level');
+                                        function displaysect()
+                                        {
+                                            if(checkboxelem_four.checked)
+                                            {
+                                                document.getElementById('alevel').style.display = 'block';
+                                            }
+                                            else
+                                            {
+                                                document.getElementById('alevel').style.display = 'none'; 
+                                            }
+                                        }
+                                        displaysect();
+    
+                                        checkboxelem_four.addEventListener('change',displaysect);
+                                    </script>   
         
-                                <dt><input type="checkbox" value="Advanced-Level"><b>Advanced Level</b></dt><br>
-                                <div class="advancedlevel">
-        
-                                <dd><input type="checkbox" value="Science"><b>Biology and Mathematics Stream</b></dd><br>
-                                <div class="bioscience">
+                                <dd><input type="checkbox" name="Science" value="Science" id="science"><b>Biology and Mathematics Stream</b></dd><br>
+                                <div class="bioscience" id="sciencesub">
                                     <dd><input type="checkbox" value="Biology">Biology</dd>
                                     <dd><input type="checkbox" value="Combined Mathematics">Combined Mathematics</dd>
                                     <dd><input type="checkbox" value="Chemistry">Chemistry</dd>
                                     <dd><input type="checkbox" value="Physics">Physics</dd>
                                     <dd><input type="checkbox" value="ICT">ICT</dd><br>
+
+                                    <script>
+                                        var checkboxelem_five = document.getElementById('science');
+                                        function displaysect()
+                                        {
+                                            if(checkboxelem_five.checked)
+                                            {
+                                                document.getElementById('sciencesub').style.display = 'block';
+                                            }
+                                            else
+                                            {
+                                                document.getElementById('sciencesub').style.display = 'none'; 
+                                            }
+                                        }
+                                        displaysect();
+    
+                                        checkboxelem_five.addEventListener('change',displaysect);
+                                    </script>  
                                 </div>
                                 
         
-                                <dd><input type="checkbox" value="Commerce"><b>Commerce Stream</b></dd><br>
-                                <div class="Commercestream">
+                                <dd><input type="checkbox" name="Commerce" value="Commerce" id="commerce"><b>Commerce Stream</b></dd><br>
+                                <div class="Commercestream" id="commercesub">
                                 <dd><input type="checkbox" value="Statistics">Statistics</dd>
                                 <dd><input type="checkbox" value="Business Studies">Business Studies</dd>
                                 <dd><input type="checkbox" value="Accounting">Accounting</dd>
                                 <dd><input type="checkbox" value="Economics">Economics</dd><br>
                                 </div>
+
+                                <script>
+                                    var checkboxelem_six = document.getElementById('commerce');
+                                    function displaysect()
+                                    {
+                                        if(checkboxelem_six.checked)
+                                        {
+                                            document.getElementById('commercesub').style.display = 'block';
+                                        }
+                                        else
+                                        {
+                                            document.getElementById('commercesub').style.display = 'none'; 
+                                        }
+                                    }
+                                    displaysect();
+
+                                    checkboxelem_six.addEventListener('change',displaysect);
+                                </script>
+
         
-                                <dd><input type="checkbox" value="Arts"><b>Arts</b></dd><br>
-                                <div class="artsstream">
+                                <dd><input type="checkbox" name="Arts" value="Arts" id="art" ><b>Art Stream</b></dd><br>
+                                <div class="artsstream" id="arts">
                                 <dd><input type="checkbox" value="Geography">Geography</dd>
                                 <dd><input type="checkbox" value="Political Science">Political Science</dd>
                                 <dd><input type="checkbox" value="History">History</dd>
@@ -289,8 +380,29 @@
                                 <dd><input type="checkbox" value="French">French</dd>
                                 <dd><input type="checkbox" value="German">German</dd>
                                 <dd><input type="checkbox" value="Japanese">Japanese</dd>
-                                </dl>
                                 </div>
+
+                                <script>
+                                    var checkboxelem_seven = document.getElementById('art');
+                                    function displaysect()
+                                    {
+                                        if(checkboxelem_seven.checked)
+                                        {
+                                            document.getElementById('arts').style.display = 'block';
+                                        }
+                                        else
+                                        {
+                                            document.getElementById('arts').style.display = 'none'; 
+                                        }
+                                    }
+                                    displaysect();
+
+                                    checkboxelem_seven.addEventListener('change',displaysect);
+                                </script>
+                                
+                            </div>
+                            </dl>
+                            </div>
                             </div>
                                 
                                 <div class="part1">
@@ -305,7 +417,7 @@
                                 </div>
    
 
-                        </div>
+
                             <div class="buttonclass">
                     <div class="submitbuttonclass"><input type="submit" name="sub" value="submit" class="submitbtn"></div><br>
                     <div class="resetbuttonclass"><input type="reset" name="res" value="reset" class="resbtn"></div>
