@@ -12,7 +12,9 @@ $password = $_POST['pwd1'];
 $pretype = $_POST['pwd2'];
 $gname = $_POST['gname'];
 $cnum = $_POST['cnumber'];
-
-echo "$name,$email,$age,$grade,$medium,$password";
-
+$username = "root";
+$password = " ";
+$database = "forms";
+$table = "student";
+$table2 = "guardian";
 ?>
