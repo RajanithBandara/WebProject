@@ -1,0 +1,165 @@
+body {
+    text-align: center;
+    align-items: center;
+    background-color: #ddd;
+}
+
+/* TEACHER'S PROFILE */
+
+.profileBox{
+    padding: 20px;
+    display: flex;
+    font-size: 20px;
+}
+
+.profileBox h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.profileBox ul {
+    list-style: none;
+}
+
+.profileBox p{
+    line-height: 1.5;
+}
+
+.profileBox  a{
+    text-decoration: none;
+    color: #abc3f0;
+}
+
+.main_btn{
+    border: none;
+    background-color: #abc3f0;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 300ms;
+    }
+    
+.main_btn:hover{
+     cursor: pointer;
+     background-color: #4c86f1;
+}
+
+.leftbox{
+     color: #fff;
+     border-radius: 15px;
+     padding: 30px;
+     margin-right: 20px;
+     background-color: #0d1425;
+     flex: 1;
+}   
+
+
+.leftbox img{
+    border-radius: 50%;
+    border: 2px solid #fff;
+    height: 250px;
+    width: 250px;
+}
+    
+.rightbox{
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    background-color: #fff;
+    flex: 1.5;
+ }
+
+
+
+
+
+@media screen and (max-width: 1068px) {
+    .profileBox{
+        display: inline;
+    }
+
+    .leftbox{
+        margin: 20px;   
+    }
+
+    .rightbox{
+margin: 20px;
+    
+    }
+
+ }
+
+
+/* RELATED TEACHERS CARDS */
+
+.headingcontainer{
+    margin: 50px;
+    letter-spacing: 0.8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    }
+
+.cardcontainer {
+    margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 275px;
+    height: 400px;
+    padding: 16px;
+    margin:  56px 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 100px;
+}
+
+.card img {
+    margin-top: -100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.card p {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.card h3{
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+.card h4{
+    font-size: 18px;
+}
+
+.card button {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(102, 165, 238);
+    cursor: pointer;
+    transition: 400ms;
+
+}
+
+.card button:hover {
+    background-color: rgb(9, 112, 230);
+}
