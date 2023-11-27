@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+label, select, button {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+select, button {
+  padding: 10px;
+}
+
+button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #23527c;
+}
+
+.Institutions {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Institutions img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.details {
+  padding: 20px;
+}
+
+.details span {
+  color: #060606;
+  font-size: 0.8rem;
+}
+
+.details h6 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.details p {
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.details button.info-button {
+  background-color: #152739;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.details button.info-button:hover {
+  background-color: #0e1825;
+}
+
+
+/*for tab*/
+@media only screen and (max-width: 768px) {
+  
+  #filter-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Institutions {
+    margin: 10px;
+  }
+
+  .Institutions img {
+    height: 200px;
+  }
+
+  .details {
+    padding: 10px;
+  }
+
+  .details button.info-button {
+    margin-top: 10px;
+  }
+}
+
+/*for mobile*/
+@media only screen and (max-width: 480px) {
+  
+  #filter-container {
+    gap: 5px;
+  }
+
+  .Institutions {
+    margin: 5px;
+  }
+
+  .Institutions img {
+    height: 150px;
+  }
+
+  .details {
+    padding: 5px;
+  }
+
+  .details button.info-button {
+    margin-top: 5px;
+  }
+}
+
+
+
+/**/
+
+
+#menu-btn{
+  width: 30px;
+  color: #fbfbfb;
+  height: 30px;
+  display: none;
+}
+
+#menu-close{
+  display: none;
+}
+
+nav .navigation ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .navigation ul li{
+  list-style: none;
+  margin-left: 30px;
+
+}
+
+nav .navigation ul li a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+
+}
+
+nav .navigation ul li a:hover {
+  color: blue;
+  
+}
+
+#institution{
+  padding: 8vw 8vw 8vw 8vw;
+  text-align: center;
+}
+
+#institution .Institution-box{
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+grid-gap: 1rem;
+margin: 50px;
+}
+
+#institution .institutions{
+  text-align: start;
+  background-color: rgb(148, 169, 190);
+  height: 100%;
+  position: relative;
+}
+
+#institution .institutions img{
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+#institution .institutions .details{
+  padding: 15px 15px 0 15px;
+}
+
+#institution .institutions .details i{
+  color: yellow;
+  font-size: .9rem;
+}
+
+#institution .institutions .Enroll{
+  background-color: green;
+  color: white;
+  line-height: 70px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  bottom: 100px;
+}
+
+.info-button {
+  padding: 10px 20px;
+  background-color: #152739;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+
+
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-link {
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #1d3a53;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-link:hover {
+  background-color: #23527c;
+}
+
+
+
