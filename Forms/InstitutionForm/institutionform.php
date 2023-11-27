@@ -13,8 +13,11 @@ $insweb = $_POST['inswebsite'];
 $username = "root";
 $password = "";
 $database = "forms";
-$table = "instituions";
-$server="Localhost";
+$table1 = "instituions";
+$table2= "institutionprofile";
+$server= "Localhost";
+
+
 
 $conn=new mysqli($server,$username,$password,$database);
 if($conn->connect_error)
@@ -26,7 +29,9 @@ else
     echo"success <br>";
     if($inspassword==$pretype)
     {
-        $s="Insert into instituions values('$name','$email','$cnumber','$uname','$inspassword','$district','$insweb')";
+        $s1="Insert into instituions values('$name','$email','$cnumber','$insweb','$district')";
+        mysqli_query($conn,$s1);
+        $s="Insert into institutionprofile values('$email','$uname','$inspassword')";
         mysqli_query($conn,$s);
         echo"Your data entered successfully";
     }
