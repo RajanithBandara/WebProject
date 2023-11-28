@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.slider-container {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 33.33%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-top: 66px;
+
+
+}
+
+.teacher-profile {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-top: -100px;
+}
+
+.view-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(102, 165, 238);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.prev-button,
+.next-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.teacher-profile h2 {
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+    font-style: var(#aa9c9c);
+}
+
+.teacher-profile p {
+    font-size: 18px;
+}
+
+.slide:hover {
+    border: 2px solid #3498db;
+    /* You can change the color to your preference */
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+    /* You can adjust the box shadow as needed */
+    border-radius: 15px;
+}
