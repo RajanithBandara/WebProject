@@ -6,27 +6,10 @@ $jsFile = "Institution.js";
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Institution site</title>
   
-  <script src="https://kit.fontawesome.com/b3136b502f.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
-  <script src="<?php echo $jsFile; ?>"></script>
-  <link rel="stylesheet" href="<?php echo $cssFile; ?>">
+<link rel="stylesheet" href="<?php echo $cssFile; ?>">
+<script src="<?php echo $jsFile; ?>"></script>
 
-  <style>
-    
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    
-</style>
-  </style>
 </head>
 <body>
 
