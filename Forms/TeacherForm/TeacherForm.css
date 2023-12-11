@@ -16,6 +16,7 @@ body
 }
 .mainpart{
     width: 40%;
+    background-color: rgb(250, 248, 248);
     text-align: center;
     border-bottom: 30px;
     margin-bottom: 30px;
