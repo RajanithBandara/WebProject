@@ -61,5 +61,12 @@ body
      display: none;
 } 
 @media screen and (max-width : 768px) {
-
-}
+    body
+     {
+       background-color:#cfbbd6;
+     }
+     .mainpart
+     {
+         width:100%;
+     }
+ }
