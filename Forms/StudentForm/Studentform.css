@@ -50,3 +50,15 @@ body{
     padding: 2%;
     font-size: 100%;
 }
+@media screen and (max-width : 768px){
+    body{
+    background-color:#cfbbd6;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:none;
+    }
+    .mainclass{
+       width:100%;
+   } 
+}

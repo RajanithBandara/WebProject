@@ -4,6 +4,7 @@
         <title>Student Form</title>
         <link rel="stylesheet" href="../../style.css">
         <link rel="stylesheet" href="studentform.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script>
             setTimeout(function(){
                 document.body.style.opacity = 1;
@@ -17,7 +18,6 @@
                 <div class="logo-section">
             </div>
             </center>
-
         </div>
         <div class="column" >
             <div id="home-button">
@@ -77,31 +77,30 @@
             </div>
         </div>
     </header>
-<div class="table-class">
-    
+    <div class="table-class">
     <div class="mainclass">
-    <form action="#" name="form" class="form">
+    <form action="http://localhost/studentform.php" name="form" class="form" method="post">
         <h1><u><b>Student Registration Form</b></u></h1>
         <div class="class1">
         <div class="class1-1">Name with Initials:</div>
-        <div class="class1-1" id="class1-1"><input type="text"></div>
+        <div class="class1-1" id="class1-1"><input type="text" name="name"></div>
         </div>
         <div class="class1">
             <div class="class1-1">E-mail:</div>
-            <div class="class1-1" id="class1-1"><input type="email"></div>
+            <div class="class1-1" id="class1-1"><input type="email" name="email"></div>
         </div>
         <div class="class1">
             <div class="class1-1">Profile photo:</div>
-            <div class="class1-1" id="class1-1"><input type="file"></div>
+            <div class="class1-1" id="class1-1"><input type="file" name="photo"></div>
             </div>
             <div class="class1">
                 <div class="class1-1">Age:</div>
-                <div class="class1-1" id="class1-1"><input type="text"></div>
+                <div class="class1-1" id="class1-1"><input type="text" name="age"></div>
                 </div>
                 <div class="class1">
                     <div class="class1-1">District:</div>
                     <div class="class1-1" id="class1-1">
-                        <select>
+                        <select name="district">
                             <option value="puttalam">Puttalam</option>
                             <option value="Ampara">Ampara</option>
                             <option value="Anuradhapura">Anuradhapura</option>
@@ -132,7 +131,7 @@
                 </div>
                 <div class="class1">
                     <div class="class1-1">Contact Number:</div>
-                    <div class="class1-1" id="class1-1"><input type="tel"></div>
+                    <div class="class1-1" id="class1-1"><input type="tel" name="number"></div>
             </div>
             <div class="class1">
                 <div class="class1-1">Grade:</div>
@@ -146,9 +145,9 @@
                                 <div class="class1">
                                     <div class="class1-1">Medium:</div>
                                     <div class="class1-1" id="class1-1">
-                                        <input type="checkbox" name="medium" value="Sinhala ">Sinhala <br>
-                                        <input type="checkbox" name="medium" value="English">English <br>
-                                        <input type="checkbox" name="medium" value="Tamil">Tamil <br>
+                                        <input type="radio" name="medium" value="Sinhala ">Sinhala <br>
+                                        <input type="radio" name="medium" value="English">English <br>
+                                        <input type="radio" name="medium" value="Tamil">Tamil <br>
                                     </div>
                                 </div>
                                 <div class="class1">
@@ -156,18 +155,18 @@
                                     <div class="class1-1" id="class1-1"><input type="text" name="txtnme" size=7 placeholder="enter name"><br></div></div>
                                 <div class="class1">
                                 <div class="class1-1">Password:</div>
-                                <div class="class1-1" id="class1-1"><input type="password" name="pwd" size=7 placeholder="password"><br></div></div>
+                                <div class="class1-1" id="class1-1"><input type="password" name="pwd1" size=7 placeholder="password"><br></div></div>
                                 <div class="class1">
                                 <div class="class1-1">Password Retype:</div>
-                                <div class="class1-1" id="class1-1"><input type="password" name="pwd" size=7 placeholder="password"><br></div></div>
+                                <div class="class1-1" id="class1-1"><input type="password" name="pwd2" size=7 placeholder="password"><br></div></div>
                                             <h2>Guardian Details:</h2>
                                             <div class="class1">
                                                 <div class="class1-1">Name:</div>
-                                                <div class="class1-1" id="class1-1"><input type="text"></div>
+                                                <div class="class1-1" id="class1-1"><input type="text" name="gname"></div>
                                                 </div>
                                                 <div class="class1">
                                                     <div class="class1-1">Contact Number:</div>
-                                                    <div class="class1-1" id="class1-1"><input type="tel"></div>
+                                                    <div class="class1-1" id="class1-1"><input type="tel" name="cnumber"></div>
                                                 </div>
                                 <div class="buttonclass">
                                 <div class="submitbuttonclass"><input type="submit" name="sub" value="Submit" class="submitbtn"></div><br>
