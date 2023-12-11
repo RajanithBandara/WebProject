@@ -40,17 +40,25 @@ body
 .submitbutton{
     border: 0;
     border-radius: 9px;
-    background-color: #b7cde5;
+    background-color: #2e92c0;
     padding: 2%;
-    font-size: 130%;
+    font-size: 100%;
     margin: 5px;
+}
+.submitbutton:hover{
+    background-color: blanchedalmond;
+    box-shadow: none;
 }
 .resetbutton{
     border: 0;
     border-radius: 9px;
-    background-color: #b7cde5;
+    background-color:#2e92c0;
     padding: 2%;
-    font-size: 150%;
+    font-size: 100%;
+}
+.resetbutton:hover{
+    background-color: blanchedalmond;
+    box-shadow: none;
 }
 #propic{
     position:relative;
