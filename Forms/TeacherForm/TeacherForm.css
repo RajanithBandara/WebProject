@@ -77,4 +77,10 @@ body
      {
          width:100%;
      }
+     .submitbutton{
+        font-size:100%;
+    }
+    .resetbutton{
+    font-size:100%;
+    }
  }
