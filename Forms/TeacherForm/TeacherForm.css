@@ -13,7 +13,7 @@ body
     min-width: 100%;
     display: flex;
 }
-.main{
+.mainpart{
     width: 40%;
     text-align: center;
     background-color:#d3c8c81a;
