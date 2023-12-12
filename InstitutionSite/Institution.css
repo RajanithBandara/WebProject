@@ -27,10 +27,13 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  align-items: center;
+  bottom: 10px;
 }
 
 button:hover {
   background-color: #23527c;
+  
 }
 
 .Institutions {
@@ -44,6 +47,15 @@ button:hover {
   flex-direction: column;
   align-items: center;
 }
+
+.Institution {
+  width: 100%; 
+  max-width: 300px;
+  margin: 0 auto; 
+  padding: 10px; 
+  border: 1px solid #ddd; 
+}
+
 
 .Institutions img {
   width: 100%;
@@ -80,10 +92,12 @@ button:hover {
   padding: 10px 20px;
   border-radius: 5px;
   margin-top: 15px;
+  
 }
 
 .details button.info-button:hover {
   background-color: #0e1825;
+  align-items: center;
 }
 
 
@@ -234,6 +248,7 @@ margin: 50px;
   cursor: pointer;
   margin-top: 50px;
   border-radius: 5px;
+  
 }
 
 
