@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px){
+    #image-div-of-firstdiv{
+        display:none;
+    }
+    .teacher{
+        flex:none;
+    }
+    .row-of-teacher-ad-1,.row-of-teacher-ad-2{
+        display:block;
+    }
+    .quotation-and-picture-content{
+        height:300px;
+        min-height:300px;
+    }
+    .quote-area{
+        flex:none;
+    }
+    .picture-area2{
+        display:none;
+        flex:none;
+    }
+    .instad-box{
+        display:block;
+        height:auto;
+        position:absolute;
+    }
+    .instimage-sec{
+        flex:none;
+    }
+    .instdet-sec{
+        flex:none;
+    }
+    .about-us-image{
+        background-position:center;
+        background-size:contain;
+        height:450px;
+        min-height:450px;
+        display:none;
+    }
+    .about-us-content-ofhome{
+        height:450px; 
+    }
+    .bluring-sect{
+        height:450px;
+        min-height:450px;
+        display:none;
+    }
+    .about-us-content-ofhome{
+        display:none;
+    }
+    .row1-of-inst-ads{
+        height:600px;
+    }
+    .institution-section-ad{
+        height: 600px;
+    }
+    .login-button{
+        right: 20px;
+        position: relative;
+    }
+    .register-button{
+        right: 20px;
+        color:white;
+        position: relative;
+    }
+}
