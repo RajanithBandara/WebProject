@@ -1,7 +1,8 @@
 .welcome-area{
     height: 500px;
     width: 100%;
-    background-image : linear-gradient(rgb(100, 100, 100),rgb(30 27 27));
+    
+    background-image : linear-gradient(#290c5c,rgb(30 27 27));
     backdrop-filter: blur(18px);
     opacity: 0.8;
     margin: 0;
@@ -29,12 +30,12 @@
     position: absolute;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    color: white;
+    color: rgb(5, 5, 42);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.235);
     border : 0;
     border-radius: 18px;
     padding: 2%;
-    background-color: rgb(142 136 136 / 21%);
+    background-color: rgba(255, 255, 255, 0.194);
     backdrop-filter: blur(18px);
 }
 #message-02{
@@ -45,15 +46,15 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
     transition: transform 1s ease-in-out;
-    color: white;
+    color: rgb(5, 5, 42);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.235);
     border : 0;
     border-radius: 18px;
     padding: 2%;
-    background-color: rgb(142 136 136 / 21%);
+    background-color: rgba(255, 255, 255, 0.194);
     backdrop-filter: blur(18px);
     flex: 1;
-    transform: translateX(50%);
+    transform: translateY(30%);
 }
 #image-div-of-firstdiv{
     position: relative;
@@ -61,7 +62,7 @@
     transition: all 1s ease-in-out;
     border : 0;
     flex: 1;
-    transform: translateX(50%);
+    transform: translateY(30%);
 }
 .login-buttons{
     width: 100%;
@@ -74,22 +75,21 @@
 .login-button{
     font-size: x-large;
     padding: 2%;
+    color:white;
     border: 0;
     border-radius: 12px;
-    background-color: rgb(6 35 75 / 79%);
+    background-color: rgb(110 127 107 / 84%);
     margin: 0;
     width: 200%;
-    color:white;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.285);
     position: relative;
     transition: background-color 1s ease-in-out;
     transition: box-shadow 1s ease-in-out;
-    transition: all 1s ease-in-out;
 }
 .login-button:hover{
-    background-color: #1b4827;
+    background-color: #a0ddb1;
     box-shadow: none;
 }
 .register-button{
@@ -98,7 +98,7 @@
     border:0;
     margin: 0;
     border-radius: 12px;
-    background-color: #554a90;
+    background-color: #435e74;
     color:white;
     width: 200%;
     font-weight: bold;
@@ -107,11 +107,38 @@
     transition: color 1s ease-in-out;
     transition: opacity 1s ease-in-out;
     opacity: 0;
+    display: block;
 }
 
 .register-button:hover{
-    background-color: rgb(41 85 31);
+    background-color: rgb(42 109 27);
     color:white
+}
+.register-button:active{
+    background-color: rgb(1, 3, 1);
+    color:white
+}
+.student-register-button,.teacher-register-button,.institution-register-button{
+    position: relative;
+    border: 0;
+    border-radius: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 1s ease-in-out;
+    padding: 0.5%;
+    left: 2%;
+    opacity: 0;
+    display: none;
+    color: white;
+}
+.student-register-button{
+    background-color: #44448d;
+}
+.teacher-register-button{
+    background-color: #b2a544d6;
+}
+.institution-register-button{
+    background-color: #55b244d6;
 }
 .counting-details-div{
     display: flex;
@@ -131,26 +158,43 @@
     transition: all 0.6s ease-in-out;
 }
 .card1-details,.card2-details,.card3-details{
-    background-color: rgb(0 0 0);
+    background-color: rgb(96 94 102 / 53%);
     backdrop-filter:blur(15px);
-    box-shadow:0px 2px 2px 2px #faf2f226;
+    box-shadow:0px 2px 2px 2px #00000026;
     border: 0;
-    color:#ffffffa1;
-    transition:all 1s ease-in-out;
     border-radius: 18px;
     padding: 2%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
     animation-name: cardoutanim;
     animation-duration: 2s;
-    transition: all 1s ease-in-out;
+    color:white;
+    transition: box-shadow 2s ease-in-out;
 }
 .card1-details:hover,.card2-details:hover,.card3-details:hover{
-    background-color: rgb(72, 76, 79);
+    background-color: rgb(0 0 0);
     animation-name: cardanim;
     animation-duration: 2s;
-    color: white;
+    color:white;
     box-shadow: none;
+}
+@keyframes cardanim {
+    from{
+        background-color: rgb(96 94 102 / 53%);
+    }
+    to{
+        background-color: black;
+        color: white;
+    }
+}
+@keyframes cardoutanim {
+    from{
+        background-color: black;
+        color: white;
+    }
+    to{
+        background-color: rgb(96 94 102 / 53%);
+    }
 }
 .quotation-and-picture-content{
     display: flex;
@@ -183,13 +227,12 @@
     position: relative;
     box-shadow:0px 3px 3px 3px #00000045;
     backdrop-filter: blur(25px);
-    background-image: linear-gradient(#443e3e6b,rgb(129 130 135 / 74%));
-    color:white;
+    background-image: linear-gradient(black,rgb(67 75 100 / 74%));
     transition: all 1s ease-in-out;
+    color:white;
 }
 .quotation-section:hover{
-    background-color: black;
-    box-shadow: none;
+    background-color: rgb(45, 45, 164);
 }
 .quote{
     font-size: x-large;
@@ -205,7 +248,7 @@
     font-style: italic;
 }
 .teachers-ads{
-    background-color: #7b858c;
+
     display: block;
     padding: 2%;
     position: relative;
@@ -214,28 +257,32 @@
     margin: 0;
 }
 .row-of-teacher-ad-1,.row-of-teacher-ad-2{
-    width: 100%;
+    width: 96%;
     display: flex;
     position: relative;
     margin: 0;
     border: 0; 
     overflow:scroll 500px;
+    padding: 2%;
+    background-color: #000000;
+    border-radius: 18px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.203);
 }
-.teacher1,.teacher2,.teacher3,.teacher4{
+.teacher{
     flex: 1;
     height: 300px;
-    background-color: #000000;
-    color:white;
-    box-shadow: 0px 1px 1px 1px black;
+    background-color: #4b564c;
+    box-shadow: 0px 1px 1px 1px rgba(236, 231, 231, 0.164);
     backdrop-filter: blur(18px);
+    color: white;
     border: 0;
     margin: 10px;
     border-radius: 18px;
     padding: 2%;
     transition: all 1s ease-in-out;
 }
-.teacher1:hover,.teacher2:hover,.teacher3:hover,.teacher4:hover{
-    background-color: #282e41;
+.teacher:hover{
+    background-color: #525561;
     box-shadow: none;
 }
 .teacher1img,.teacher2img,.teacher3img,.teacher4img{
@@ -275,36 +322,98 @@
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.about-us-content-ofhome{
+.institution-section-ad{
+    height: 300px;
+    width: 96%;
+    padding: 2%;
+    border: 0;
+    margin: 0;
+    display: flex;
+    background-color: #1d1b1b;
+}
+.row1-of-inst-ads{
+    display: flex;
+    position: relative;
     width: 100%;
+    background-color: rgb(56 64 48);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.203);
+    border-radius: 18px;
+    border: 0;
+    margin: 0;
+}
+.instad-box{
+    display: flex;
+    width: 96%;
+    min-width: 96%;
+    height: 300px;
+    overflow: auto;
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+.instimage-sec{
+    padding: 2%;
+    border: 0;
+    margin: 0;
+    border-radius: 18px;
+    flex: 50%;
+    align-content:center;
+    justify-content:center;
+    align-items:center;
+    min-width:50%;
+    display:flex;
+}
+.inst-det-sec{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #25262a;
+    border: 0;
+    margin: 0;
+    flex: 46%;
+}
+.about-us-content-ofhome{
+    width: 96%;
     margin: 0;
     border: 0;
-    background-image: url("PXL_20230712_071039404~2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     position: relative;
     height: 900px;
     overflow: hidden;
+    padding: 2%;
 }
 .about-us-image{
+    background-image: url("PXL_20230712_071039404~2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 900px;
     justify-content: center;
     align-content: center;
     display: flex;
     position: relative;
-    background-color: rgba(233, 224, 224, 0);
     min-width: 100%;
     min-height: 900px;
     transition: all 0.5s ease-in-out;
+    border-radius: 18px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.16);
     overflow: hidden;
     margin: 0;
     border: 0;
 }
-.about-us-content-ofhome:hover .about-us-image{
-    backdrop-filter: blur(18px);
+.bluring-sect{
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;
+    border: 0;
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    transition: all 0.3s ease-in-out;
+}
+.about-us-content-ofhome:hover .bluring-sect{
+    backdrop-filter: blur(8px);
 }
 .abt2-content{
     padding-top: 360px;
