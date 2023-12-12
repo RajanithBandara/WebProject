@@ -12,7 +12,7 @@ $gname = $_POST['gname'];
 $cnumber = $_POST['cnumber'];
 
 $username = "id21562540_forms";
-$password = "Sarath123$";
+$password = "";
 $database = "id21562540_formsreg";
 $table = "student";
 $table2 = "guardian";
